@@ -2,27 +2,27 @@ import {Box, Button, Container, Flex, HStack, Image, Link, SimpleGrid, Spacer, S
 
 const Home = () => {
     return ( 
-        <Box pb='152px'>
+        <Box pb='152px' id="Home">
             <Container maxW='5xl'>
-                <Flex direction={{base:'column',md:'row'}} alignItems={{base:'center',md:'left'}} textAlign={{base:'center',md:'left'}}>
+                <Flex mt={{base:'40px',md:'0px'}} direction={{base:'column',md:'row'}} alignItems={{base:'center',md:'left'}} textAlign={{base:'center',md:'left'}}>
                     <Box my='auto'>
                         <Text fontSize={'48px'} fontWeight='700' color='#fff'>
                             Ahmad Muyassar
                         </Text>
-                        <Text fontSize={'20px'} fontWeight='400' color='#7F8087'>Designer UI/UX professionale in L’Aquila, Italy</Text>
+                        <Text fontSize={'20px'} fontWeight='400' color='#7F8087'>Front End Developer & Designer UI/UX Makassar, Indonesia</Text>
                         <Stack mt='50px' direction={'row'} spacing='247px'>
-                            <Stack direction={{base:'column',md:'row'}} spacing='16px'>
+                            <Stack direction={{base:'row',md:'row'}} spacing={{base:'8px',md:'16px'}}>
                                 <Link ml='-14px'>
                                  <Button
                                         rightIcon={<svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z" fill="white"/>
                                         </svg>}
                                         textAlign='left'
-                                        iconSpacing='16px'
-                                        fontSize='24px'
+                                        iconSpacing={{base:'8px',md:'16px'}}
+                                        fontSize={{base:'16px',md:'24px'}}
                                         size='md'
                                         height='31px'
-                                        width='191px'
+                                        width={{base:'160px',md:'191px'}}
                                         bgColor={'transparent'}
                                         color='#fff'
                                         _hover={{ bg: 'transparent' }}
@@ -34,14 +34,6 @@ const Home = () => {
                                         >
                                         Contact
                                         </Button>
-                                    {/* <Text fontSize={'24px'} fontWeight='400' color='#fff'>
-                                        Contact
-                                    </Text>
-                                    <Stack>
-                                        <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z" fill="white"/>
-                                        </svg>
-                                    </Stack> */}
                                 </Link>
                                 <Link>
                                  <Button
@@ -49,12 +41,12 @@ const Home = () => {
                                         <path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z" fill="white"/>
                                         </svg>}
                                         textAlign='left'
-                                        iconSpacing='16px'
-                                        fontSize='24px'
+                                        iconSpacing={{base:'8px',md:'16px'}}
+                                        fontSize={{base:'16px',md:'24px'}}
                                         size='md'
                                         pl='0px'
                                         height='31px'
-                                        width='191px'
+                                        width={{base:'160px',md:'191px'}}
                                         bgColor={'transparent'}
                                         color='#fff'
                                         _hover={{ bg: 'transparent' }}
@@ -65,26 +57,18 @@ const Home = () => {
                                         }}
                                         >
                                         My Portfolio
-                                        </Button>
-                                    {/* <Text fontSize={'24px'} fontWeight='400' color='#fff'>
-                                        Contact
-                                    </Text>
-                                    <Stack>
-                                        <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z" fill="white"/>
-                                        </svg>
-                                    </Stack> */}
+                                        </Button>                                    
                                 </Link>
                             </Stack>
                         </Stack>
                     </Box>
                     <Box>
-                        <Image w='100%' h={{base:'345px',md:'545px',lg:'890px'}} src='/hero.png' alt='' />
+                        <Image w='100%' h={{base:'345px',md:'545px',lg:'890px',xl:'890px'}} src='/hero.png' alt='' />
                     </Box>
                 </Flex>
 
                 <Flex direction='column' mt='120px' gap='124px'>
-                    <Stack direction={{base:'column',md:'row'}} spacing={'200px'}>
+                    <Stack direction={{base:'column',md:'row'}} spacing={{base:'40px',md:'200px'}}>
                         <Box>
                             <Text color='#fff' fontSize={'24px'} fontWeight='500'>ABOUT</Text>
                         </Box>
@@ -92,12 +76,14 @@ const Home = () => {
                             <Text fontSize={'20px'} fontWeight='400' color='#7F8087'>Hey! Im Leonardo, a UI/UX Designer, creating brand new, thoughtful and exceptionally detailed user interfaces.</Text>
                         </Box>
                     </Stack>
+                    
 
-                    <Stack direction={{base:'column',md:'row'}} spacing={'200px'}>
+                    {/* Skills */}
+                    <Stack direction={{base:'column',md:'row'}} spacing={{base:'40px',md:'200px'}}>
                         <Box>
                             <Text color='#fff' fontSize={'24px'} fontWeight='500'>SKILLS</Text>
                         </Box>
-                        <SimpleGrid columns={2} spacing='40px'>
+                        <SimpleGrid columns={{base:1,md:2}} spacing='40px'>
                             <Box>
                                 <Text fontSize={'24px'} color='#fff'><u>Figma</u></Text>
                                 <Box mt='24px' spacing='4px'>
@@ -125,7 +111,7 @@ const Home = () => {
                             </Box>
 
                             <Box>
-                                <Text fontSize={'24px'} color='#fff'><u>Adobe Photoshop</u></Text>
+                                <Text fontSize={'24px'} color='#fff'><u>Photoshop</u></Text>
                                 <Box mt='24px' spacing='4px'>
                                     <HStack spacing='16px'>
                                         <Stack>
@@ -151,7 +137,7 @@ const Home = () => {
                             </Box>
 
                             <Box>
-                                <Text fontSize={'24px'} color='#fff'><u>Adobe After Effects</u></Text>
+                                <Text fontSize={'24px'} color='#fff'><u>After Effects</u></Text>
                                 <Box mt='24px' spacing='4px'>
                                     <HStack spacing='16px'>
                                         <Stack>
@@ -177,13 +163,14 @@ const Home = () => {
                             </Box>
                         </SimpleGrid>
                     </Stack>
-
-                    <Stack direction={{base:'column',md:'row'}} spacing={'200px'}>
+                    
+                    {/* Works */}
+                    <Stack direction={{base:'column',md:'row'}} spacing={{base:'40px',md:'200px'}}>
                         <Box>
                             <Text color='#fff' fontSize={'24px'} fontWeight='500'>WORKS</Text>
                         </Box>
                         <Flex direction={'column'} gap='48px'>
-                            <Stack direction='row' spacing='48px'>
+                            <Stack direction={{base:'column',md:'row'}} spacing='48px'>
                                 <Image w='153px' h='153px' src='/works.png' borderRadius={'100%'} alt='' />
                                 <Box>
                                     <Text fontSize={'24px'} color='#fff'>Mediana.co</Text>
@@ -200,7 +187,7 @@ const Home = () => {
                                     </Link>
                                 </Box>
                             </Stack>
-                            <Stack direction='row' spacing='48px'>
+                            <Stack direction={{base:'column',md:'row'}} spacing='48px'>
                                 <Image w='153px' h='153px' src='/works.png' borderRadius={'100%'} alt='' />
                                 <Box>
                                     <Text fontSize={'24px'} color='#fff'>Mediana.co</Text>
@@ -217,7 +204,7 @@ const Home = () => {
                                     </Link>
                                 </Box>
                             </Stack>
-                            <Stack direction='row' spacing='48px'>
+                            <Stack direction={{base:'column',md:'row'}} spacing='48px'>
                                 <Image w='153px' h='153px' src='/works.png' borderRadius={'100%'} alt='' />
                                 <Box>
                                     <Text fontSize={'24px'} color='#fff'>Mediana.co</Text>
@@ -234,7 +221,7 @@ const Home = () => {
                                     </Link>
                                 </Box>
                             </Stack>
-                            <Stack direction='row' spacing='48px'>
+                            <Stack direction={{base:'column',md:'row'}} spacing='48px'>
                                 <Image w='153px' h='153px' src='/works.png' borderRadius={'100%'} alt='' />
                                 <Box>
                                     <Text fontSize={'24px'} color='#fff'>Mediana.co</Text>
@@ -251,7 +238,7 @@ const Home = () => {
                                     </Link>
                                 </Box>
                             </Stack>
-                            <Stack direction='row' spacing='48px'>
+                            <Stack direction={{base:'column',md:'row'}} spacing='48px'>
                                 <Image w='153px' h='153px' src='/works.png' borderRadius={'100%'} alt='' />
                                 <Box>
                                     <Text fontSize={'24px'} color='#fff'>Mediana.co</Text>
@@ -271,7 +258,8 @@ const Home = () => {
                         </Flex>
                     </Stack>
                     
-                    <Stack direction={{base:'column',md:'row'}} spacing={'200px'}>
+                    {/* I've Work For */}
+                    <Stack direction={{base:'column',md:'row'}} spacing={{base:'40px',md:'200px'}}>
                         <Box>
                             <Text color='#fff' fontSize={'24px'} fontWeight='500'>I’VE WORK FOR</Text>
                         </Box>
@@ -291,12 +279,13 @@ const Home = () => {
                         </Flex>
                     </Stack>
                     
-                    <Stack direction={{base:'column',md:'row'}} spacing={'200px'}>
+                    {/* Contack */}
+                    <Stack direction={{base:'column',md:'row'}} spacing={{base:'40px',md:'200px'}}>
                         <Box>
                             <Text color='#fff' fontSize={'24px'} fontWeight='500'>CONTACT</Text>
                         </Box>
                         <Box>
-                            <Text  mt='-20px' fontSize={'48px'} fontWeight='300' color='#fff'>work@leonardos.it</Text>
+                            <Text  mt='-20px' fontSize={'48px'} fontWeight='300' color='#fff'>work@yassar.it</Text>
                             <Text  mt='24px' fontSize={'20px'} fontWeight='400' color='#7F8087'>*only send email for working purpose</Text>
                         </Box>
                     </Stack>
